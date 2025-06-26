@@ -1,1 +1,1 @@
-# buildify-ab62274f-fcc7-4437-bbf3-a92f79588912
+fuluus.app
