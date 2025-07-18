@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La dag Appka aa rabtaa</title>
+  <style>
+    :root {
+      --primary: #4361ee;
+      --secondary: #3a0ca3;
+      --accent: #f72585;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --whatsapp: #25D366;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background-color: #f5f7ff;
+      color: var(--dark);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.1) 0%, rgba(248, 249, 250, 0.1) 90%);
+    }
+
+    .container {
+      max-width: 650px;
+      width: 90%;
+      padding: 40px 30px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      margin: 30px 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: var(--secondary);
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 16px 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      background-color: var(--primary);
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-whatsapp {
+      background-color: var(--whatsapp);
+      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn:hover {
+      background-color: #3a56e8;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #128C7E;
+      box-shadow: 0 6px 15px rgba(18, 140, 126, 0.4);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .btn:hover::after {
+      opacity: 1;
+    }
+
+    .btn-icon {
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .container {
+        padding: 30px 20px;
+      }
+      
+      .btn {
+        padding: 14px 20px;
+        font-size: 15px;
+      }
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    .btn:nth-child(1) { animation-delay: 0.1s; }
+    .btn:nth-child(2) { animation-delay: 0.2s; }
+    .btn:nth-child(3) { animation-delay: 0.3s; }
+    .btn:nth-child(4) { animation-delay: 0.4s; }
+    .btn:nth-child(5) { animation-delay: 0.5s; }
+    .btn:nth-child(6) { animation-delay: 0.6s; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Halkaan kala dag Appka Dhan</h1>
+    <p class="subtitle">Dooro barnaamijka oo la deg Appka aa u baahan tahay.</p>
+    <p class="subtitle"><em>Choose the platform and download the app you need."</em></p>
+
+    <!-- Referral Buttons -->
+    <div class="btn-container">
+      <a href="https://referral-link.com/1xbet" class="btn" target="_blank">
+        <i class="fas fa-download btn-icon"></i>
+        Ku qaado 1xBet / Get 1xBet
+      </a>
+      <a href="https://referral-link.com/linebet" class="btn" target="_blank">
+        <i class="fas fa-download btn-icon"></i>
+        Ku qaado Linebet / Get Linebet
+      </a>
+      <a href="https://referral-link.com/betwinner" class="btn" target="_blank">
+        <i class="fas fa-download btn-icon"></i>
+        Ku qaado Betwinner / Get Betwinner
+      </a>
+      <a href="https://referral-link.com/melbet" class="btn" target="_blank">
+        <i class="fas fa-download btn-icon"></i>
+        Ku qaado Melbet / Get Melbet
+      </a>
+      <a href="https://referral-link.com/winwin" class="btn" target="_blank">
+        <i class="fas fa-download btn-icon"></i>
+        Ku qaado Winwin / Get Winwin
+      </a>
+      <a href="https://wa.me/252613798686" class="btn btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp btn-icon"></i>
+        WhatsApp Geedi Exchange
+      </a>
+    </div>
+  </div>
+</body>
+</html>
